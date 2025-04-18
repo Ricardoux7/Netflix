@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <title>Netflix</title>
+    </head>
+    <header class="h-[120px] w-screen bg-[rgba(0,0,0,0.5)] fixed flex justify-between items-center direction-row px-4">
+        <div class="justify-start">
+            <img src="./Images/logo.png" alt="" class="w-[150px]">
+        </div>
+        <div class="flex justify-end">
+            <select name="lang" class="text-white bg-transparent border-white">
+                <option value="es" class="text-white">Espanol</option>
+                <option value="en" class="text-white">English</option>
+            </select>
+            <button class="bg-[#e50914] text-white rounded-md px-4 py-2">Iniciar Sesion</button>
+        </div>
+    </header>
+    <main class="h-screen bg-cover bg-center" style="background-image: url('./Images/background.jpg')">
+        <div class="bg-[rgba(0,0,0,0.7)] h-[70%]">
+            <div class="py-40 px-10 items-center block justify-center direction-column text-center">
+            <h1 class="text-white text-4xl font-bold">Películas y series ilimitadas y mucho más</h1>
+            <p class="text-white text-size text-[18px] my-3">A partir de USD 3,99. Cancela cuando quieras.</p>
+            <h3 class="text-white py-3 text-[18px]">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</h3>
+            <input type="text" placeholder="Email" class="w-[100%] rounded-md border-[3px] h-[65px] bg-[rgba(0,0,0,0.7)] text-white border-white/50 pl-5">
+            <div>
+                <button class="bg-[#e50914] h-[60px] text-white my-5 rounded-md px-7 py-2 items-center justify-center flex mx-auto">Comenzar
+                <img src="Icons/chevron-down-solid.svg" alt="" class="w-[20px] flex justify-end rotate-270 ">
+                </button>
+            </div>
+            </div>
+        </div>
+            <section class="bg-black h-[auto] bg-gradient-to-b from-blue-900 to-black">
+                <div class="h-[5px] w-full bg-gradient-to-r from-purple-500 via-red-500 to-purple-500"></div>
+                <p class="text-white text-2xl ml-[10px] mt-[10px] font-bold" >Tendencias</p>
+                <div class="w-screen h-[auto] relative overflow-x-scroll">
+                    <ul class="gap-2 justify-center inline-flex direction-row  py-5 px-2 " >
+                        <li class="w-[150px]"><img src="./Images/pelicula1.jpg" alt=""></li>
+                        <li class="w-[150px]"><img src="./Images/pelicula2.jpg" alt=""></li>
+                        <li class="w-[150px]"><img src="./Images/pelicula3.jpg" alt=""></li>
+                        <li class="w-[150px]"><img src="./Images/pelicula4.jpg" alt=""></li>
+                        <li class="w-[150px]"><img src="./Images/pelicula5.jpg" alt=""></li>
+                        <li class="w-[150px]"><img src="./Images/pelicula6.jpg" alt=""></li>
+                        <li class="w-[150px]"><img src="./Images/pelicula7.jpg" alt=""></li>
+                        <li class="w-[150px]"><img src="./Images/pelicula8.jpg" alt=""></li>
+                        <li class="w-[150px]"><img src="./Images/pelicula9.jpg" alt=""></li>
+                        <li class="w-[150px]"><img src="./Images/pelicula10.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <p>Mas motivos para unirte</p>
+                <section>
+                    <div class="h-[200px] w-screen bg-gradient-to-r from-[#1a2043] via-[#1d162b] to-[#1f1221]"></div>
+                    <div class="h-[200px] w-screen"></div>
+                    <div class="h-[200px] w-screen"></div>
+                    <div class="h-[200px] w-screen"></div>
+                </section>
+            </section>
+
+    </main>
+</body>
+</html>
