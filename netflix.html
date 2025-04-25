@@ -1,62 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
 <body>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <title>Netflix</title>
-    </head>
-    <header class="h-[14vh] w-full bg-[rgba(0,0,0,0.5)] absolute flex justify-between items-center px-4">
-        <div class="justify-start z-5">
+    
+    <header class="h-[14vh] w-full flex justify-around items-center absolute">
+        <div class="z-5 w-auto">
             <img src="./Images/logo.png" alt="" class="w-[20vw] max-w-[150px] ">
         </div>
-        <div class="flex justify-end gap-2 w-[50vw] h-[20%] ">
-            <select name="lang" class="text-white bg-transparent border-white z-5">
+        <div class="flex items-center gap-2 h-[100%] w-auto">
+            <select name="lang" class="text-white bg-transparent border border-white z-5 w-auto h-[30%] rounded-md">
                 <option value="es" class=" text-black ">Espanol</option>
                 <option value="en" class=" text-black ">English</option>
             </select>
-            <button class="bg-[#e50914] text-white rounded-md px-4 z-5 w-auto text-center truncate">Iniciar Sesion</button>
+            <button class="bg-[#e50914] text-white rounded-md px-4 z-5 w-auto h-[30%] text-center truncate">Iniciar Sesion</button>
         </div>
     </header>
     <main>
       <div class="min-h-screen bg-cover bg-center " style="background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/69bec183-9cc8-49d4-8fc2-08228d3c91b4/web/VE-es-20250414-TRIFECTA-perspective_15518acb-ec7c-4947-a3ae-1917cc88e376_large.jpg'); background-size: cover;">
-        <div class="bg-[rgba(0,0,0,0.5)] w-full min-h-screen relative">
-          <div class="py-[20vh] px-5 flex flex-col items-center justify-center text-center">
-              <h1 class="text-white text-4xl font-bold">Películas y series ilimitadas y mucho más</h1>
+        <div class="bg-[rgba(0,0,0,0.8)] w-full min-h-screen relative">
+          <div class="py-[30vh] px-5 flex flex-col items-center justify-center text-center">
+            <div class="w-[50%]">
+              <h1 class="text-white text-6xl font-bold text-center">Películas y series ilimitadas y mucho más</h1>
               <p class="text-white text-lg my-3">A partir de USD 3,99. Cancela cuando quieras.</p>
-              <h3 class="text-white py-3 text-lg">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</h3>
-              <input type="text" placeholder="Email" class="w-[90%] max-w-[500px] rounded-md border-[3px] h-[10vh] bg-[rgba(0,0,0,0.7)] text-white border-white/50 pl-5 mx-auto">
-              <div>
-                  <button class="bg-[#e50914] h-[60px] text-white my-5 rounded-md px-5 py-2 flex items-center justify-center mx-auto">
-                      Comenzar
-                      <img src="Icons/chevron-down-solid.svg" alt="" class="w-[20px] rotate-270">
-                  </button>
+            </div>
+              <h3 class="text-white py-3 text-lg text-center w-[50%]">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</h3>
+              <div class="block md:flex gap-5 pb-[5%]">
+                <input type="text" placeholder="Email" class="w-[80vw] max-w-[500px] rounded-sm border-[1px] h-[8vh] bg-[rgba(0,0,0,0.7)] text-white border-white/50 pl-5 mx-auto">
+                <button class="bg-[#e50914] h-[8vh] text-white rounded-sm px-5 flex items-center justify-center mx-auto font-semibold text-[25px] mt-5 md:mt-0 ">
+                        Comenzar
+                        <img src="Icons/chevron-down-solid.svg" alt="" class="w-[20px] rotate-270">
+                </button>
               </div>
           </div>
       </div>
       </div>
 
-            <section class="bg-black h-[auto] bg-gradient-to-b from-blue-900 via-black via-black to-black w-full pb-5">
-                <div class="h-[5px] w-full bg-gradient-to-r from-purple-500 via-red-500 to-purple-500"></div>
-                <p class="text-white text-2xl ml-[5px] mt-[5px] font-bold" >Tendencias</p>
-                <div class="w-full h-[auto] overflow-x-scroll">
-                    <ul class="gap-2 justify-center inline-flex direction-row py-5 px-2 flex-row" >
-                        <li class="w-[130px] a"><img src="./Images/pelicula1.jpg" alt=""></li>
-                        <li class="w-[130px]"><img src="./Images/pelicula2.jpg" alt=""></li>
-                        <li class="w-[130px]"><img src="./Images/pelicula3.jpg" alt=""></li>
-                        <li class="w-[130px]"><img src="./Images/pelicula4.jpg" alt=""></li>
-                        <li class="w-[130px]"><img src="./Images/pelicula5.jpg" alt=""></li>
-                        <li class="w-[130px]"><img src="./Images/pelicula6.jpg" alt=""></li>
-                        <li class="w-[130px]"><img src="./Images/pelicula7.jpg" alt=""></li>
-                        <li class="w-[130px]"><img src="./Images/pelicula8.jpg" alt=""></li>
-                        <li class="w-[130px]"><img src="./Images/pelicula9.jpg" alt=""></li>
-                        <li class="w-[130px]"><img src="./Images/pelicula10.jpg" alt=""></li>
+            <section class="bg-black h-[auto] w-full pb-5 relative">
+                <div class="h-[5px] w-full bg-gradient-to-r from-purple-500 via-red-500 to-purple-500">
+                </div>
+                <div class="h-[50px] w-[90%] bg-gradient-to-b from-blue-900 to-black rounded-bl-[50%] rounded-br-[50%] rounded-r-[50%] rounded-l-[50%]  mx-auto"></div>
+
+                </div>
+                <div class=" h-[20px]"></div>
+                <p class="text-white text-2xl ml-[7%] mt-[5px] font-bold py-[2%]" >Tendencias</p>
+                <div class="w-[80vw] h-[auto] overflow-x-scroll mx-auto">
+                    <ul class="gap-20 flex w-[full] justify-center inline-flex direction-row py-5 px-2 flex-row  px-20">
+                        <li class="w-[170px] relative relative mx-auto"><img src="./Images/pelicula1.jpg" alt="">
+                          <img src="./Icons/1.webp" alt="" class="text-white bottom-[10%] left-[-50%] absolute text-[50px]">
+                        </li>
+                        <li class="w-[170px] relative"><img src="./Images/pelicula2.jpg" alt="">
+                        <img src="./Icons/2.webp" alt="" class="text-white bottom-[10%] left-[-50%] absolute text-[50px]">
+                      </li>
+                        <li class="w-[170px] relative"><img src="./Images/pelicula3.jpg" alt="">
+                        <img src="./Icons/3.webp" alt="" class="text-white bottom-[10%] left-[-50%] absolute text-[50px]">
+                      </li>
+                        <li class="w-[170px] relative"><img src="./Images/pelicula4.jpg" alt="">
+                        <img src="./Icons/4.webp" alt="" class="text-white bottom-[10%] left-[-50%] absolute text-[50px]">
+                      </li>
+                        <li class="w-[170px] relative"><img src="./Images/pelicula5.jpg" alt="">
+                        <img src="./Icons/5.webp" alt="" class="text-white bottom-[10%] left-[-50%] absolute text-[50px]">
+                      </li>
+                        <li class="w-[170px] relative"><img src="./Images/pelicula6.jpg" alt="">
+                        <img src="./Icons/6.webp" alt="" class="text-white bottom-[10%] left-[-50%] absolute text-[50px]">
+                      </li>
+                        <li class="w-[170px] relative"><img src="./Images/pelicula7.jpg" alt="">
+                        <img src="./Icons/7.webp" alt="" class="text-white bottom-[10%] left-[-50%] absolute text-[50px]">
+                      </li>
+                        <li class="w-[170px] relative"><img src="./Images/pelicula8.jpg" alt="">
+                        <img src="./Icons/8.webp" alt="" class="text-white bottom-[10%] left-[-50%] absolute text-[50px]">
+                      </li>
+                        <li class="w-[170px] relative"><img src="./Images/pelicula9.jpg" alt="">
+                        <img src="./Icons/9.webp" alt="" class="text-white bottom-[10%] left-[-50%] absolute text-[50px]">
+                      </li>
+                        <li class="w-[170px] relative"><img src="./Images/pelicula10.jpg" alt="">
+                          <img src="./Icons/10.webp" alt="" class="text-white bottom-[10%] left-[-50%] absolute text-[50px]">
+                          ></li>
                     </ul>
                 </div>
-                <p class="text-white text-2xl ml-[5px] mt-[5px] mb-[5px] font-bold">Mas motivos para unirte</p>
-                <section class="h-auto w-full py-[5px]">
-                  <div class="h-[200px] w-[90%] mx-auto bg-gradient-to-r from-[#1a1f41] via-[#1e1527] to-[#20111e] my-5 rounded-[20px] py-3 px-5 relative">
+                <p class="text-white text-2xl ml-[7%] mt-[5px] mb-[5px] font-bold py-[2%]">Mas motivos para unirte</p>
+                <section class="h-auto w-[90vw] py-[5px] flex flex-col md:flex md:flex-row md:justify-center md:gap-5 md:mx-auto">
+                  <div class="h-[200px] w-[90%]  bg-gradient-to-r from-[#1a1f41] via-[#1e1527] to-[#20111e] my-5 rounded-[20px] py-3 px-5 relative md:h-[450px] md:w-[20%] mx-auto">
                     <h3 class="text-white font-bold text-xl">Disfruta en tu TV</h3>
                         <p class="text-white mt-3 text-[15px] text-white/60 font-bold">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</p>
                         <div class="absolute bottom-0 right-0">
@@ -110,7 +138,7 @@
                           </svg>
                         </div>
                   </div>
-                  <div class="h-[200px] max-w-[90%] mx-auto bg-gradient-to-r from-[#1a1f41] via-[#1e1527] to-[#20111e] my-5 rounded-[20px] py-3 px-5 relative">
+                  <div class="h-[200px] max-w-[90%]  min-w-[90%] md:min-w-[20%]  bg-gradient-to-r from-[#1a1f41] via-[#1e1527] to-[#20111e] my-5 rounded-[20px] py-3 px-5 relative md:h-[450px] md:w-[20%] mx-auto">
                     <h3 class="text-white font-bold text-xl">Descarga tus series para verlas offline</h3>
                         <p class="text-white mt-[10px] mx-[15px] text-[15px] text-white/60 font-bold">Guarda tu contenido favorito y siempre tendrás algo para ver.</p>
                         <div class="absolute bottom-0 right-0">
@@ -165,7 +193,7 @@
                           </svg>
                         </div>
                   </div>
-                  <div class="h-[200px] max-w-[90%] mx-auto bg-gradient-to-r from-[#1a1f41] via-[#1e1527] to-[#20111e] my-5 rounded-[20px] py-3 px-5 relative">
+                  <div class="h-[200px] max-w-[90%] min-w-[90%] md:min-w-[20%]  bg-gradient-to-r from-[#1a1f41] via-[#1e1527] to-[#20111e] my-5 rounded-[20px] py-3 px-5 relative md:h-[450px] md:w-[20%] mx-auto">
                     <h3 class="text-white mt-3 text-[15px] text-white/60 font-bold">Disfruta donde quieras</h3>
                     <p class="text-white mt-[10px] mx-[15px] text-[15px] text-white/60 font-bold">Películas y series ilimitadas en tu teléfono, tablet, laptop y TV.</p>
                     <div class="absolute bottom-0 right-0">
@@ -233,7 +261,7 @@
                       </svg>
                     </div>
                   </div>
-                  <div class="h-[200px] max-w-[90%] mx-auto bg-gradient-to-r from-[#1a1f41] via-[#1e1527] to-[#20111e] my-5 rounded-[20px] py-3 px-5 relative">
+                  <div class="h-[200px] max-w-[90%]   bg-gradient-to-r from-[#1a1f41] via-[#1e1527] to-[#20111e] my-5 rounded-[20px] py-3 px-5 relative md:h-[450px] md:w-[20%] mx-auto">
                     <h3 class="text-white font-bold text-xl">Crea perfiles para niños</h3>
                     <p class="text-white mt-3 text-[15px] text-white/60 font-bold">Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, gratis con tu membresía.</p>
                     <div class="absolute bottom-0 right-0">
@@ -316,12 +344,12 @@
                     </div>
                   </div>
                 </section>
-                <p>Preguntas frecuentes</p>
+                <p class="text-white text-2xl ml-[5%] mt-[5px] mb-[5px] font-bold py-[2%]">Preguntas frecuentes</p>
                 <section class="flex flex-col gap-2">
-                  <details class="w-[90%] mx-auto">
-                    <summary class="items-center justify-between flex [50px] bg-[#2d2d2d] h-[90px]">
+                    <details class="w-[90%] mx-auto">
+                    <summary class="items-center justify-between flex bg-[#2d2d2d] h-[90px] group">
                       <h3 class="text-white font-bold text-2xl ml-[20px]">¿Qué es Netflix?</h3>
-                      <span class="pr-[5%] text-4xl text-center text-white">+</span>
+                      <span class="pr-[5%] text-4xl text-center text-white group-open:rotate-45 transform transition duration-500">+</span>
                     </summary>
                       <p class="h-auto bg-[#2d2d2d] text-white text-2xl px-[10px]">Netflix es un servicio de streaming que ofrece una gran variedad de películas, series y documentales premiados en casi cualquier pantalla conectada a internet.
                       </p>
@@ -330,7 +358,7 @@
                   <details class="w-[90%] mx-auto">
                     <summary class="items-center justify-between flex [50px] bg-[#2d2d2d] h-[90px]">
                       <h3 class="text-white font-bold text-2xl ml-[20px]">¿Cuanto cuesta Netflix?</h3>
-                      <span class="pr-[5%] text-4xl text-center text-white">+</span>
+                      <span class="pr-[5%] text-4xl text-center text-white group-open:rotate-45 transform transition duration-500">+</span>
                     </summary>
                       <p class="h-auto bg-[#2d2d2d] text-white text-2xl px-[10px] py-[20px]">Disfruta Netflix en tu smartphone, tablet, smart TV, laptop o dispositivo de streaming, todo por una tarifa plana mensual. Planes desde USD 3,99 hasta USD 7,99 al mes. Sin costos adicionales ni contratos.
                       </p>
@@ -338,7 +366,7 @@
                   <details class="w-[90%] mx-auto">
                     <summary class="items-center justify-between flex [50px] bg-[#2d2d2d] h-[90px]">
                       <h3 class="text-white font-bold text-2xl ml-[20px]">¿Donde puedo ver Netflix?</h3>
-                      <span class="pr-[5%] text-4xl text-center text-white">+</span>
+                      <span class="pr-[5%] text-4xl text-center text-white group-open:rotate-45 transform transition duration-500">+</span>
                     </summary>
                       <p class="h-auto bg-[#2d2d2d] text-white text-2xl px-[10px] py-[20px]">Disfruta donde quieras, cuando quieras. Inicia sesión en tu cuenta de Netflix para ver contenido al instante a través de netflix.com desde tu computadora personal o en cualquier dispositivo con conexión a internet que cuente con la app de Netflix, como smart TV, smartphones, tablets, reproductores multimedia y consolas de juegos..
                       </p>
@@ -347,7 +375,7 @@
                   <details class="w-[90%] mx-auto">
                     <summary class="items-center justify-between flex [50px] bg-[#2d2d2d] h-[90px]">
                       <h3 class="text-white font-bold text-2xl ml-[20px]">¿Como Cancelo?</h3>
-                      <span class="pr-[5%] text-4xl text-center text-white">+</span>
+                      <span class="pr-[5%] text-4xl text-center text-white group-open:rotate-45 transform transition duration-500">+</span>
                     </summary>
                       <p class="h-auto bg-[#2d2d2d] text-white text-2xl px-[10px] py-[20px]">Netflix es flexible. Sin contratos molestos ni compromisos. Cancela la membresía online con solo dos clics. No hay cargos por cancelación. Empieza y termina cuando quieras.
                       </p>
@@ -355,7 +383,7 @@
                   <details class="w-[90%] mx-auto">
                     <summary class="items-center justify-between flex [50px] bg-[#2d2d2d] h-[90px]">
                       <h3 class="text-white font-bold text-2xl ml-[20px]">¿Que puedo ver Netflix?</h3>
-                      <span class="pr-[5%] text-4xl text-center text-white">+</span>
+                      <span class="pr-[5%] text-4xl text-center text-white group-open:rotate-45 transform transition duration-500">+</span>
                     </summary>
                       <p class="h-auto bg-[#2d2d2d] text-white text-2xl px-[10px] py-[20px]">Netflix tiene un amplio catálogo de películas, series, documentales, animes, originales premiados y más. Todo lo que quieras ver, cuando quieras.
                       </p>
@@ -363,7 +391,7 @@
                   <details class="w-[90%] mx-auto">
                     <summary class="items-center justify-between flex [50px] bg-[#2d2d2d] h-[90px]">
                       <h3 class="text-white font-bold text-2xl ml-[20px]">¿Como Cancelo?</h3>
-                      <span class="pr-[5%] text-4xl text-center text-white">+</span>
+                      <span class="pr-[5%] text-4xl text-center text-white group-open:rotate-45 transform transition duration-500">+</span>
                     </summary>
                       <p class="h-auto bg-[#2d2d2d] text-white text-2xl px-[10px]">La experiencia de Netflix para niños está incluida en la membresía para que los padres tengan el control mientras los peques disfrutan series y películas familiares en su propio espacio.
                       </p>
